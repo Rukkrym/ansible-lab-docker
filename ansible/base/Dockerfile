@@ -6,7 +6,7 @@ FROM ubuntu:18.04
 # install required packages
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
-        aptitude iputils-ping net-tools man vim openssh-server python \
+        aptitude iputils-ping net-tools man vim nano apt-utils openssh-server python \
     && rm -rf /var/lib/apt/lists/*
 
 # ensure that required directories are created
